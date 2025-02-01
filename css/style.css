@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+div {
+    width: 50%;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
