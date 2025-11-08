@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+sitemap: https://rockinpotatos.netlify.app//sitemap.xml
