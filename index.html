@@ -25,6 +25,45 @@
         font-family: "Montserrat", sans-serif
     }
 
+    .pdf {
+        aspect-ratio: 4 / 3;
+    }
+
+    /* Show the mobile embed */
+    @media (max-width: 600px) {
+        embed.mobile {
+            display: block;
+        }
+
+        embed.desktop {
+            display: none;
+        }
+    }
+
+    .tablink {
+        background-color: #555;
+        color: black;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 10rem;
+    }
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+        color: black;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+    }
+
     .w3-row-padding img {
         margin-bottom: 12px
     }
@@ -32,8 +71,24 @@
     .bgimg {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url('temp-icon2.jpg');
+        background-image: url('professional-pic.jpg');
         min-height: 100%;
+    }
+
+    .project {
+        margin: 5rem 0rem;
+    }
+
+    .vl {
+        border-left: 1px solid black;
+    }
+
+    .site-tagline {
+        text-align: center;
+        font-size: 1.2em;
+        color: #666;
+        font-style: italic;
+        margin-top: 5px;
     }
 </style>
 
@@ -48,8 +103,7 @@
         <div class="w3-bar-block w3-center">
             <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
             <a href="projects.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
-            <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-            <a href="testimonials.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Testimonials</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
         </div>
     </nav>
 
@@ -60,17 +114,26 @@
 
     <!-- Header -->
     <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-        <div style="display: flex; align-items: center;">
-            <img src="Logo-sm.png" style="height:158.5px;">
-            <div style="padding-left:1rem;">
-                <h1 class="w3-jumbo"><b>Daniel Rist</b></h1>
-                <p>Web Developer and Web Designer.</p>
+        <div style="display: flex; flex-direction:row; align-items: flex-start;">
+            <img src="Logo-sm.png" height="150">
+            <div style="display:flex; justify-content:center; flex-direction:column; padding-left:1rem;">
+                <!-- <h1 class="w3-jumbo"><b>Daniel Rist</b></h1> -->
+                <img src="Signature.png" alt="Signature" width="310" style="padding-left: 5px; margin-bottom: 0.5rem;">
+                <p class="site-tagline">
+                    Master Crafter of Digital Presences <br>
+                    Web Developer and Web Designer.
+                </p>
             </div>
         </div>
-        <img src="temp-icon2.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-        <img src="temp-icon2.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+        <img src="professional-pic.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+        <img src="professional-pic.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
     </header>
 
+    <div class="w3-padding-32 w3-content w3-text-grey">
+        <h2>Quick Insight</h2>
+        <p>I am brand new Junior web developer and designer. And I currently looking for place that has opening for a Junior developer and or designer.</p>
+        <p>What I can offer to the table is someone that is willing put in the hours, postive, and tries to think differently</p>
+    </div>
 
 
     <!-- Contact Section -->
