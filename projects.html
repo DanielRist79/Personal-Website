@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport impact-site-verification' value='c12db0e7-e016-46c1-8133-211ce0ba034e" content="width=device-width, initial-scale=1.0">
+    <!-- FIXED: proper viewport tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FIXED: separate site verification meta -->
+    <meta name="impact-site-verification" content="c12db0e7-e016-46c1-8133-211ce0ba034e">
+
     <title>danielristswebsite</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -17,22 +21,11 @@
     h4,
     h5,
     h6 {
-        font-family: "Montserrat", sans-serif
+        font-family: "Montserrat", sans-serif;
     }
 
     .pdf {
-        aspect-ratio: 4 / 3;
-    }
-
-    /* Show the mobile embed */
-    @media (max-width: 600px) {
-        embed.mobile {
-            display: block;
-        }
-
-        embed.desktop {
-            display: none;
-        }
+        /* aspect-ratio: 4 / 3; */
     }
 
     .tablink {
@@ -51,7 +44,6 @@
         background-color: #777;
     }
 
-    /* Style the tab content (and add height:100% for full page content) */
     .tabcontent {
         color: black;
         display: none;
@@ -60,7 +52,7 @@
     }
 
     .w3-row-padding img {
-        margin-bottom: 12px
+        margin-bottom: 12px;
     }
 
     .bgimg {
@@ -85,12 +77,17 @@
         font-style: italic;
         margin-top: 5px;
     }
+    
+    /* NEW: make images, videos, and embeds responsive on mobile */
+    img, video, embed {
+        max-width: 100%;
+    }
+
 </style>
 
 <body>
 
-
-    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <!-- Hidden Sidebar (reveals when clicked on menu icon) -->
     <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
         <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
             <i class="fa fa-remove"></i>
@@ -102,7 +99,6 @@
         </div>
     </nav>
 
-
     <!-- Page Content -->
     <div class="w3-main w3-padding-large">
         <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">MENU<i class="fa fa-bars" style="padding-left: 0.5rem;"></i></span>
@@ -113,13 +109,12 @@
         <h1>Projects</h1>
 
         <div class="project">
-            <h2>Design and Develop Farm Website</h2>
-            <!-- Role -->
+            <h2>Design & Develop Farm Website</h2>
             <p>For I did everything inside of the project. What I learn was how to design a user friendly website</p>
             <p>The process of how I started the project, started with a plan for an structure highlighting key sections like U-Pick Farm, Workshops & Events, and Visitor Information. I wanted a design that uses vivid, nature-based colors and farm images to reflect that rural theme. And choose to make the content focuses on produce, events, and visitors to ensure a smooth and enjoyable experience. Built simply, and finnally adding social media links.</p>
-            <embed class="desktop pdf" src="Desktop Project 1.pdf" width="75%" height="640">
+            <embed class="pdf" src="Desktop Project 1.pdf" width="100%" height="640">
             <hr style="border: 2px solid black;">
-            <div style=" display: flex;">
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
                 <div>
                     <p style="margin: 0px;">Tools Used</p>
                     <ul style="margin: 10px;">
@@ -129,19 +124,17 @@
                     </ul>
                 </div>
                 <div class="vl" style="height: 140px; padding-right:1rem;"></div>
-                <p>After submiting the project, I had accomplished in creating a user friendly website that sought out to make.</p>
+                <p>After submitting the project, I had accomplished creating a user-friendly website that sought out to make.</p>
             </div>
         </div>
 
         <div class="project">
-            <h2>Google Ranking Potato information Website</h2>
-            <!-- Role -->
-            <p>This project consisted of my self putting togeather the website. As I learned about and how ways to improve the website's where it ranked on google searches.</p>
-            <!-- Description -->
-            <p>When first started working on the project I set up the settings and acounts to have a web space to build then second I started by reasurching all about potatoes. Then Finnally I would add look into ways to improve my ranking by add one small piece at time and also coming back to improve perfomance where I can.</p>
+            <h2>Google Ranking Potato Information Website</h2>
+            <p>This project consisted of my self putting together the website. As I learned about and how ways to improve the website's where it ranked on google searches.</p>
+            <p>When first started working on the project I set up the settings and accounts to have a web space to build then second I started by researching all about potatoes. Then finally I would add look into ways to improve my ranking by add one small piece at time and also coming back to improve performance where I can.</p>
             <embed type="text/html" src="rockinpotatos/index.html" width="100%" height="600">
             <hr style="border: 2px solid black;">
-            <div style=" display: flex;">
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
                 <div>
                     <p style="margin: 0px;">Tools Used</p>
                     <ul style="margin: 10px;">
@@ -152,15 +145,14 @@
                     </ul>
                 </div>
                 <div class="vl" style="height: 140px; padding-right:1rem;"></div>
-                <p>The Projects results where that I was able to the website to show up on google when potatos was searched, I was able to get some traffic.</p>
+                <p>The Projects results were that I was able to get the website to show up on Google when “potatoes” was searched, and get some traffic.</p>
             </div>
-
         </div>
 
         <div class="project">
-            <h2>Joomla outdoors informational Website</h2>
-            <p>For this project I did the entire thing myself. I learned How to use the a Content Managment System in this case Joomla.</p>
-            <p>For this project my process consisted of me figure out the features that the sender will want for this project for went this website is sent to sender. Then I implements colors that fited in with the content theme.</p>
+            <h2>Joomla Outdoors Informational Website</h2>
+            <p>For this project I did the entire thing myself. I learned how to use a Content Management System, in this case Joomla.</p>
+            <p>For this project my process consisted of me figuring out the features that the sender will want for this project when this website is sent to them. Then I implemented colors that fit in with the content theme.</p>
             <ul>
                 <li>Joomla</li>
                 <li>UI/UX</li>
@@ -170,7 +162,7 @@
                 Your browser does not support the video tag.
             </video>
             <hr style="border: 2px solid black; margin-top:0px;">
-            <div style=" display: flex;">
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
                 <div>
                     <p style="margin: 0px;">Tools Used</p>
                     <ul style="margin: 10px;">
@@ -178,26 +170,17 @@
                     </ul>
                 </div>
                 <div class="vl" style="height: 140px; padding-right:1rem;"></div>
-                <p>The projects out come was a sender that was happy with what we sent him. And I learned how to use a new Content Managment System.</p>
+                <p>The project outcome was a sender that was happy with what we sent them. And I learned how to use a new Content Management System.</p>
             </div>
         </div>
-
-
+    </div>
 </main>
 
    <!-- Footer -->
-   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-       <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
-       <i class="fa fa-instagram w3-hover-opacity"></i>
-       <i class="fa fa-snapchat w3-hover-opacity"></i>
-       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-       <i class="fa fa-twitter w3-hover-opacity"></i>
-       <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+   <!-- CHANGED: margin from -24px to 0 to avoid horizontal scroll -->
+   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:0">
        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-       <!-- End footer -->
    </footer>
-
-   <!-- END PAGE CONTENT -->
 
    <script>
        // Open and close sidebar
@@ -211,6 +194,5 @@
        }
    </script>
 
-   </body>
-
-   </html>
+</body>
+</html>

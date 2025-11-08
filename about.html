@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport impact-site-verification' value='c12db0e7-e016-46c1-8133-211ce0ba034e" content="width=device-width, initial-scale=1.0">
+    <!-- FIXED: proper viewport tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FIXED: separate site verification meta -->
+    <meta name="impact-site-verification" content="c12db0e7-e016-46c1-8133-211ce0ba034e">
+
     <title>danielristswebsite</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -17,7 +21,7 @@
     h4,
     h5,
     h6 {
-        font-family: "Montserrat", sans-serif
+        font-family: "Montserrat", sans-serif;
     }
 
     .pdf {
@@ -51,7 +55,6 @@
         background-color: #777;
     }
 
-    /* Style the tab content (and add height:100% for full page content) */
     .tabcontent {
         color: black;
         display: none;
@@ -60,7 +63,7 @@
     }
 
     .w3-row-padding img {
-        margin-bottom: 12px
+        margin-bottom: 12px;
     }
 
     .bgimg {
@@ -85,12 +88,17 @@
         font-style: italic;
         margin-top: 5px;
     }
+
+    /* NEW: prevent image overflow on mobile */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 </style>
 
 <body>
 
-
-    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <!-- Hidden Sidebar -->
     <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
         <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
             <i class="fa fa-remove"></i>
@@ -102,55 +110,45 @@
         </div>
     </nav>
 
-
     <!-- Page Content -->
     <div class="w3-main w3-padding-large">
         <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">MENU<i class="fa fa-bars" style="padding-left: 0.5rem;"></i></span>
 
-<main>
-    <img src="logo-sm.png" alt="">
-    <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-        <h1>About Me</h1>
-        <hr class="w3-opacity">
-        <p>Hello, my name is Daniel Rist. I am constantly told that they were glad that they were able to work with me due to my positive attitude and outgoing tendencies to try to give the best I can give. At this moment I am currently living in Edmonton, Alberta. Since the beginning I have always felt that doing somethings are just a lot easier when you have some sort of instruction. So, when I create a website, I always start by figuring out what I will need so I can build a concept to build off.</p>
+        <main>
+            <img src="logo-sm.png" alt="">
+            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+                <h1>About Me</h1>
+                <hr class="w3-opacity">
+                <p>Hello, my name is Daniel Rist. I am constantly told that they were glad that they were able to work with me due to my positive attitude and outgoing tendencies to try to give the best I can give. At this moment I am currently living in Edmonton, Alberta. Since the beginning I have always felt that doing somethings are just a lot easier when you have some sort of instruction. So, when I create a website, I always start by figuring out what I will need so I can build a concept to build off.</p>
 
-        <p>When designing a website to be developed for a customer, the first thing I do is to figure out their brand and then their needs. But I typically try as much as possible not to make the designs similar in design. Except that I try to make all designs as simple as it makes sense to go. I just love it when things are simple, it has always put me at ease.</p>
+                <p>When designing a website to be developed for a customer, the first thing I do is to figure out their brand and then their needs. But I typically try as much as possible not to make the designs similar in design. Except that I try to make all designs as simple as it makes sense to go. I just love it when things are simple, it has always put me at ease.</p>
 
-        <p>In my free time I typically like to surround myself with modern art such as cinematic movies or just racing video games, mainly Shelbys.</p>
+                <p>In my free time I typically like to surround myself with modern art such as cinematic movies or just racing video games, mainly Shelbys.</p>
 
-        <p>But when I am working, I typically like to listen to older music or a few newer artists like Nickelback or Imagine Dragons. I would really like to get the eventual chance to get some buddies on a road trip to see Nickelback or Imagine Dragons play in person.</p>
+                <p>But when I am working, I typically like to listen to older music or a few newer artists like Nickelback or Imagine Dragons. I would really like to get the eventual chance to get some buddies on a road trip to see Nickelback or Imagine Dragons play in person.</p>
 
-        <p>I have always been a builder, and I just enjoy building things, digital or physical, and saying I created something. So if you are looking for someone that is a simple person, and I sound like the type of person you are looking for, I would be thrilled to talk.</p>
+                <p>I have always been a builder, and I just enjoy building things, digital or physical, and saying I created something. So if you are looking for someone that is a simple person, and I sound like the type of person you are looking for, I would be thrilled to talk.</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <!-- CHANGED: margin from -24px to 0 to avoid mobile scroll -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:0">
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </footer>
+
+        <script>
+            // Open and close sidebar
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "60%";
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+
     </div>
-</main>
-
-   <!-- Footer -->
-   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-       <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
-       <i class="fa fa-instagram w3-hover-opacity"></i>
-       <i class="fa fa-snapchat w3-hover-opacity"></i>
-       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-       <i class="fa fa-twitter w3-hover-opacity"></i>
-       <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-       <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-       <!-- End footer -->
-   </footer>
-
-   <!-- END PAGE CONTENT -->
-
-   <script>
-       // Open and close sidebar
-       function openNav() {
-           document.getElementById("mySidebar").style.width = "60%";
-           document.getElementById("mySidebar").style.display = "block";
-       }
-
-       function closeNav() {
-           document.getElementById("mySidebar").style.display = "none";
-       }
-   </script>
-
-   </body>
-
-   </html>
+</body>
+</html>
